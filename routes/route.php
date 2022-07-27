@@ -1,10 +1,10 @@
 <?php
 
-use Boiler\Core\Urls\Route;
-use App\User;
+use App\Controllers\BaseController;
+use Boiler\Core\Engine\Router\Route;
 
 /** 
- * Create all routes here
+ * Create routes here
  * ----------------------------
  * use Route::loadRoutes() to load other route files 
  * 
@@ -13,17 +13,4 @@ use App\User;
  * Happy coding :) 
  * */
 
-Route::get("/", "BaseController::index")->as("home");
-
-
-Route::get('/access', function () {
-
-    $token = (new User)->find(1)->createAccessToken('my_token');
-    return Json([$token]);
-});
-
-Route::protected('Authorization:Bearer', function(){
-    Route::get('/protection', function(){
-        return Json(["user" => auth()->firstname]);
-    });
-});
+Route::get("/", [BaseController::class, "index"])->as("home");
