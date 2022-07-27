@@ -2,7 +2,7 @@
 
 namespace App;
 
-use App\Core\Database\Model;
+use Boiler\Core\Database\Model;
 
 
 class PasswordReset extends Model {
@@ -15,12 +15,7 @@ class PasswordReset extends Model {
 
     public $table = "password_resets";
 
-    
-    public function __construct()
-    {
-        parent::__construct();
-        $this->db("wearslot");
-    }
+
 }
 
 ?>

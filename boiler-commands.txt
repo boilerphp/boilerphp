@@ -25,10 +25,10 @@
 			--rollback to rollback tables and migrations, optional keys to specify [--steps=int] [--target=migration-file]
 
 
-# Third-party library and websocket management, activation and disabling.
+# Websocket management, activation and disabling.
 
-	php manage activate [websocket | third-party-library] 
-	php manage disable [websocket | third-party-library]
+	php manage activate [websocket] 
+	php manage disable [websocket]
 
 
 	--if socket has been enable you'll be able to use [php socket <SocketName>] to run socket

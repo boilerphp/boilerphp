@@ -1,6 +1,6 @@
 <?php
 
-use App\Core\Urls\Route;
+use Boiler\Core\Urls\Route;
 use App\User;
 
 /** 

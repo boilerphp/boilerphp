@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use App\Core\Console\Console;
-use App\Core\Server;
+use Boiler\Core\Console\Console;
+use Boiler\Core\Server;
 
 trait Application
 {

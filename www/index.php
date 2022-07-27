@@ -22,7 +22,7 @@ require __DIR__."/../vendor/autoload.php";
 * Include server class namespace
 * -----------------------------------------------------
 */ 
-use App\Core\Server;
+use Boiler\Core\Server;
 
 
 /*

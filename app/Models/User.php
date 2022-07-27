@@ -2,8 +2,8 @@
 
 namespace App;
 
-use App\Admin\Auth\HasAccessTokens;
-use App\Core\Database\Model;
+use Boiler\Admin\Auth\HasAccessTokens;
+use Boiler\Core\Database\Model;
 
 
 class User extends Model {

@@ -2,7 +2,7 @@
 
 namespace App;
 
-use App\Core\Database\Model;
+use Boiler\Core\Database\Model;
 
 
 class Role extends Model {

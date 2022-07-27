@@ -25,7 +25,7 @@ require __DIR__."/configs/App.php";
 |----------------------------------------------
 |
 */
-use App\Core\Console\Console;
+use Boiler\Core\Console\Console;
 
 
 /*
@@ -37,7 +37,7 @@ use App\Core\Console\Console;
 */
 
 $console = new Console(
-    new App\Core\Server, $argv
+    new \Boiler\Core\Server, $argv
 );
 
 /*
