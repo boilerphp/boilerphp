@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use Boiler\Admin\Auth\HasAccessTokens;
+use Boiler\Core\Admin\Traits\HasAccessTokens;
 use Boiler\Core\Database\Model;
 
 
