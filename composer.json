@@ -15,7 +15,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "App\\Config\\": "configs/"
+            "App\\Config\\": "configs/",
+            "Tests\\": "tests/"
         }
     }
 }

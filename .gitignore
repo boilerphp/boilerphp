@@ -2,4 +2,4 @@
 
 /vendor/*
 ./boilerphp.modules
-/core/*
+.env

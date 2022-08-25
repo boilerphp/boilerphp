@@ -1,10 +1,9 @@
 <?php 
 
-namespace App\Notification;
+namespace App\Notifications;
 
-use App\Messages\Mail\Mail;
-use App\Messages\Notification;
-
+use Boiler\Core\Messages\Mail\Mail;
+use Boiler\Core\Messages\Notification\Notification;
 
 class TestNotification extends Notification {
 
