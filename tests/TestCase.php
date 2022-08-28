@@ -7,13 +7,14 @@ use PHPUnit\Framework\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase
 {
-	
-	use Application;
+  use Application;
 
-	public function __construct()
+  protected function setUp(): void
   {
-    parent::__construct("Testing");
-
     $this->startApplication();
+  }
+
+  protected function tearDown(): void
+  {
   }
 }

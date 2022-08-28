@@ -3,3 +3,4 @@
 /vendor/*
 ./boilerphp.modules
 .env
+*js
