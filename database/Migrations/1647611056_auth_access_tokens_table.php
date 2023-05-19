@@ -5,16 +5,18 @@ use Boiler\Core\Database\Migration\Migration;
 use Boiler\Core\Database\Migration\Table;
 
 
-class AuthAccessTokensTable extends Migration {
+class AuthAccessTokensTable extends Migration
+{
 
     /**
      * creates database table
      * 
      * @return void
      */
-    public function in() {
+    public function in()
+    {
 
-        Table::create("auth_access_tokens", function(Diagram $diagram){
+        Table::create("auth_access_tokens", function (Diagram $diagram) {
 
             $diagram->id();
             $diagram->column('name')->string();
@@ -24,9 +26,7 @@ class AuthAccessTokensTable extends Migration {
             $diagram->column('access')->string();
             $diagram->column('last_used_date')->timestamp()->nullable();
             $diagram->timestamps();
-
         });
-
     }
 
     /**
@@ -34,12 +34,8 @@ class AuthAccessTokensTable extends Migration {
      * 
      * @return void
      */
-    public function out() {
-
+    public function out()
+    {
         Table::dropIfExists("auth_access_tokens");
     }
-
 }
-
-
-

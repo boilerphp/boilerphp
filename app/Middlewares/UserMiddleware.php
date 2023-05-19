@@ -11,10 +11,6 @@ class UserMiddleware extends Middleware
 
     public function handle($request, $next)
     {
-        if (!auth()) {
-            return redirect('/auth-needed');
-        }
-
         return $next;
     }
 }

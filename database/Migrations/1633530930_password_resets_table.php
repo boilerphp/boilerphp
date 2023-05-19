@@ -5,16 +5,18 @@ use Boiler\Core\Database\Migration\Migration;
 use Boiler\Core\Database\Migration\Table;
 
 
-class PasswordResetsTable extends Migration {
+class PasswordResetsTable extends Migration
+{
 
     /**
      * creates database table
      * 
      * @return void
      */
-    public function in() {
+    public function in()
+    {
 
-        Table::create("password_resets", function(Diagram $diagram){
+        Table::create("password_resets", function (Diagram $diagram) {
 
             $diagram->id();
             $diagram->column("user_id")->integer();
@@ -22,9 +24,7 @@ class PasswordResetsTable extends Migration {
             $diagram->column("status")->boolean();
             $diagram->column("expired")->boolean();
             $diagram->timestamps();
-
         });
-
     }
 
     /**
@@ -32,12 +32,8 @@ class PasswordResetsTable extends Migration {
      * 
      * @return void
      */
-    public function out() {
-
+    public function out()
+    {
         Table::dropIfExists("password_resets");
     }
-
 }
-
-
-

@@ -6,16 +6,18 @@ use Boiler\Core\Database\Migration\Table;
 
 
 
-class UserTable extends Migration {
+class UserTable extends Migration
+{
 
     /**
      * creates database table
      * 
      * @return void
      */
-    public function in() {
+    public function in()
+    {
 
-        Table::create("users", function(Diagram $diagram){
+        Table::create("users", function (Diagram $diagram) {
 
             $diagram->id();
             $diagram->column("firstname")->string();
@@ -25,9 +27,7 @@ class UserTable extends Migration {
             $diagram->column("role_id")->bigInteger();
             $diagram->column("verified")->boolean();
             $diagram->timestamps();
-
         });
-
     }
 
     /**
@@ -35,10 +35,8 @@ class UserTable extends Migration {
      * 
      * @return void
      */
-    public function out() {
-
+    public function out()
+    {
         Table::dropIfExists("users");
     }
-
 }
-
