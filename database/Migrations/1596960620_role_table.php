@@ -17,8 +17,8 @@ class RoleTable extends Migration {
 
             $diagram->id();
             $diagram->column("name")->string()->unique();
-            $diagram->column("created_by")->bigInteger()->foreign("users", "id");
-            $diagram->column("updated_by")->bigInteger()->foreign("users", "id");
+            $diagram->column("created_by")->bigInteger();
+            $diagram->column("updated_by")->bigInteger();
             $diagram->timestamps();
 
         });

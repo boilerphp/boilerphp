@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\BaseController;
+use App\Middlewares\UserMiddleware;
 use Boiler\Core\Engine\Router\Route;
 
 /** 
@@ -13,4 +14,7 @@ use Boiler\Core\Engine\Router\Route;
  * Happy coding :) 
  * */
 
-Route::get("/", [BaseController::class, "index"])->as("home");
+
+Route::middleware([UserMiddleware::class], function() {
+    Route::get("/", [BaseController::class, "index"])->as("home");
+});

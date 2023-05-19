@@ -14,6 +14,14 @@ class App
     public $session_lifetime = 172800;
 
     /**
+     * Token expiration time
+     *
+     * @var int
+     *
+     */
+    public $token_expiration = 86400;
+
+    /**
      * Set session across subdomains
      *
      * @var string
