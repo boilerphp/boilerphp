@@ -1,6 +1,6 @@
 <?php
 
-use App\Controllers\BaseController;
+use App\Controllers\HomeController;
 use Boiler\Core\Engine\Router\Route;
 
 /** 
@@ -13,4 +13,4 @@ use Boiler\Core\Engine\Router\Route;
  * Happy coding :) 
  * */
 
-Route::get("/", [BaseController::class, "index"])->as("home");
+Route::get("/", [HomeController::class, "index"])->as("home");
