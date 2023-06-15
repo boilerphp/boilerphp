@@ -10,7 +10,7 @@ class UserTest extends TestCase
 
   public function testUserAccountCreation()
   {
-    $user = (new User)->create(['firstname' => 'Testing 2']);
+    $user = (new User)->create(['firstname' => 'BoilerTest']);
     $this->assertNotEmpty($user->firstname);
   }
 }
