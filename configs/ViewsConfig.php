@@ -16,7 +16,7 @@ class ViewsConfig {
     * @value string
     *
     */
-    static public $static_files_path = "public";
+    static public $static_files_path = "assets";
 
     
 

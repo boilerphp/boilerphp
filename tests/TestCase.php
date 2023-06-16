@@ -2,7 +2,6 @@
 
 namespace Tests;
 
-use Boiler\Core\Console\Console;
 use PHPUnit\Framework\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase

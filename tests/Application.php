@@ -14,7 +14,6 @@ trait Application
     $console = new Console(server: new Server(), verbose: false);
 
     $console->command('migrate --fresh');
-		$console->command('db seed');
-
+    $console->command('db seed');
   }
 }
