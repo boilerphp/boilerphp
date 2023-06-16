@@ -2,6 +2,7 @@
     "name": "boiler/boiler",
     "description": "Simple PHP framework for webapps",
     "type": "project",
+    "license": "MIT",
     "authors": [
         {
             "name": "Don Alkens",
