@@ -8,7 +8,7 @@
             "email": "akinniyiakinpelumi@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "boiler/core": "dev-master"
     },
