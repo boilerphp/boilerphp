@@ -23,7 +23,7 @@ class AuthAccessTokensTable extends Migration
             $diagram->column('token_type')->string();
             $diagram->column('token_id')->bigInteger();
             $diagram->column('token')->string();
-            $diagram->column('access')->string();
+            $diagram->column('access')->text();
             $diagram->column('last_used_date')->timestamp()->nullable();
             $diagram->timestamps();
         });
