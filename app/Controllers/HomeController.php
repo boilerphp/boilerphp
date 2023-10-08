@@ -14,4 +14,9 @@ class HomeController extends Controller
     {
         return $this->render("index");
     }
+
+    public function about()
+    {
+        return $this->render('about');
+    }
 }

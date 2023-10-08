@@ -13,7 +13,7 @@ To start the application server. See flags below
 
 # Generate App Files.
 
-`php manage create [controller | middleware | notification | model | seeder | socket ] <name>`
+`php manage create [controller | middleware | migration | notification | model | seeder | socket ] <name>`
 
 This command will generate files with the name provide in the folder directory of the module option. See available flags below.
 

@@ -2,6 +2,6 @@
 
 <h4>Welcome To BoilerPHP</h4>
 
-<h3>User ID: @{{ auth()?->id }}</h3>
+<h3>App Name: @{{ env('APP_NAME') }}</h3>
 
 

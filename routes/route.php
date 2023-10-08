@@ -14,3 +14,4 @@ use Boiler\Core\Engine\Router\Route;
  * */
 
 Route::get("/", [HomeController::class, "index"])->as("home");
+Route::get('/about', [HomeController::class, 'about'])->as('about');
