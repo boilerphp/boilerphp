@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/boilerphp/core.git",
-                "reference": "a846d0da938e2567478786937d76497a15df0968"
+                "reference": "6185cd333ab4321983cf483be23d97ea35428d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/boilerphp/core/zipball/a846d0da938e2567478786937d76497a15df0968",
-                "reference": "a846d0da938e2567478786937d76497a15df0968",
+                "url": "https://api.github.com/repos/boilerphp/core/zipball/6185cd333ab4321983cf483be23d97ea35428d7e",
+                "reference": "6185cd333ab4321983cf483be23d97ea35428d7e",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "issues": "https://github.com/boilerphp/core/issues",
                 "source": "https://github.com/boilerphp/core/tree/master"
             },
-            "time": "2023-10-24T09:44:37+00:00"
+            "time": "2023-11-12T11:24:50+00:00"
         },
         {
             "name": "doctrine/dbal",
